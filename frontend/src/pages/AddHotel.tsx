@@ -18,7 +18,7 @@ const AddHotel = () => {
     mutate(hotelFormData);
     console.log(hotelFormData)
   };
-  return <ManageHotelForm onSave={handleSave} isLoading={isLoading}/>;
+  return <ManageHotelForm onSave={handleSave} isLoading={isLoading} />;
 };
 
 export default AddHotel;

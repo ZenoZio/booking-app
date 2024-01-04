@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     credentials: true,
     origin: process.env.FRONTEND_URLS,
-    methods: ['GET', 'POST']
+    methods: ['GET','POST','PUT']
 }))
 
 app.use(express.static(path.join(__dirname, '../../frontend/dist')));
