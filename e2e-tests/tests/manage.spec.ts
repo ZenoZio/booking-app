@@ -76,7 +76,6 @@ test("should edit hotel", async ({ page }) => {
   await expect(page.getByText("Hotel Saved!")).toBeVisible();
 
   await page.reload();
-
   await expect(page.locator('[name="name"]')).toHaveValue(
     "test hotel UPDATED"
   );
